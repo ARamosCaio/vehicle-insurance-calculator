@@ -9,4 +9,5 @@ After registered, the user can calculate the insurance monthly fee and the insur
 ## Delivery roadmap
 
 [] - 09/03/2023 - Database script and CRUD operations for vehicle registration
+
 [] - 10/03/2023 - Insurance monthly fee and insurance deductible calculator
