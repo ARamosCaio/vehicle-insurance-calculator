@@ -13,7 +13,7 @@ def register_car():
     sql = "INSERT INTO car_info (model, brand, year_manufacture, price) VALUES (%s, %s, %s, %s);"
 
     data = (
-        input('Insira o modelo do veículo: ')
+        input('Insira o modelo do veículo: '),
         input('Insira a marca do veículo: '),
         input('Insira o ano de fabricação: '),
         input('Insira o preço estimado do veículo: ')

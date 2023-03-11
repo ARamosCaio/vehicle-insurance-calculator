@@ -8,10 +8,10 @@ database = "vehicles"
 
 )
 
-def show_table():
+def show_cars_table():
     cursor = connection.cursor()
 
-    cursor.execute("SELECT id, brand, model, year_manufacture FROM car_info;")
+    cursor.execute("SELECT id, model, brand, price FROM car_info;")
     car_data = cursor.fetchall()
 
     cursor.close()
@@ -19,3 +19,4 @@ def show_table():
 
     for car in car_data:
         print(car)
+
