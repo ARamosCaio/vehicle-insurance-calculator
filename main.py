@@ -6,6 +6,8 @@ os.system('cls')
 
 print('\nVehicle Insurance Calculator\n')
 
+read_table.show_cars_table()
+
 connection = mysql.connector.connect(
     host = "localhost",
     user = "root",

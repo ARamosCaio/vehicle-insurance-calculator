@@ -18,5 +18,5 @@ def show_cars_table():
     connection.close()
 
     for car in car_data:
-        print(car)
+        print(car[0], car[1], car[2], car[3])
 
