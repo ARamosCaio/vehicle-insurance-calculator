@@ -9,7 +9,7 @@ database = "vehicles"
 )
 
 def show_cars_table():
-    cursor = connection.cursor()
+    cursor = connection.cursor(dictionary=True)
 
     cursor.execute("SELECT id, model, brand, price FROM car_info;")
     car_data = cursor.fetchall()
@@ -18,5 +18,5 @@ def show_cars_table():
     connection.close()
 
     for car in car_data:
-        print(car[0], car[1], car[2], car[3])
+        print(car["id"], car["model"], car["brand"], car["price"])
 
