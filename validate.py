@@ -14,3 +14,10 @@ def validate_brand():
     print('Marca inválida')
     print(*brands, sep=", ")
     return validate_brand()
+
+def validate_price():
+    price = float(input('Insira o preço estimado do veículo: '))
+    if price in range(10000, 250000):
+        return price
+    print('Apenas valores entre 10.000,00 e 250.000,00')
+    return validate_price()
