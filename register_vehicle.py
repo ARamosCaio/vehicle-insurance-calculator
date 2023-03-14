@@ -17,7 +17,7 @@ data = (
     input('Insira o modelo do veículo: '),
     validate.validate_brand(),
     validate.validate_year(),
-    input('Insira o preço estimado do veículo: ')
+    validate.validate_price(),
 )
 
 cursor.execute(sql, data)
